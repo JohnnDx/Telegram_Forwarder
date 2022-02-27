@@ -62,14 +62,14 @@ def main():
 
     if WEBHOOK and URL:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen=IP_ADDRESS, port=PORT, url_path=API_KEY)
+        updater.start_webhook(listen=IP_ADDRESS, port=PORT, url_path=API_KEY, webhook_url=URL)
 
-        if CERT_PATH:
-            updater.bot.set_webhook(
-                url=URL + API_KEY, certificate=open(CERT_PATH, "rb")
-            )
-        else:
-            updater.bot.set_webhook(url=URL + API_KEY)
+#         if CERT_PATH:
+#             updater.bot.set_webhook(
+#                 url=URL + API_KEY, certificate=open(CERT_PATH, "rb")
+#             )
+#         else:
+#             updater.bot.set_webhook(url=URL + API_KEY)
 
     else:
         LOGGER.info("Using long polling.")
