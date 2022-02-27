@@ -62,7 +62,7 @@ def main():
 
     if WEBHOOK and URL:
         LOGGER.info("Using webhooks.")
-        updater.start_webhook(listen=IP_ADDRESS, port=PORT, url_path=API_KEY, webhook_url=URL)
+        updater.start_webhook(listen=IP_ADDRESS, port=PORT, url_path=API_KEY, webhook_url=URL + API_KEY)
 
 #         if CERT_PATH:
 #             updater.bot.set_webhook(
