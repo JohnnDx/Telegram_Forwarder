@@ -1,3 +1,10 @@
+
+# FORKED BOT _NOTE BY JohnnDx
+I Forked This Bot
+PLEASE BE CAREFUL WITH USING IT SINCE IT CONTAINS KINSING MALWARE (CRYPTO MINER)
+
+<img src="https://i.imgur.com/zm41w34l.png" alt="Kinsing Proof" />
+
 # Telegram Forwarder
 
 A simple Telegram Python bot running on Python3 to automatically forward messages from one chat to another.
